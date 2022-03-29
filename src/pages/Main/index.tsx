@@ -5,17 +5,17 @@ import {
     Container,
 } from './styles'
 
-export function Login({ navigation  }) {
+export function Main({ navigation }) {
     return (
         <Container>
             <Text 
                 font={'xlarge'}
                 weight='bold'
             >
-                Woofs
+                Main
             </Text>
 
-            <TouchableOpacity onPress={() => navigation.navigate('Main')}>
+            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
                 <Text font={'medium'}>Click</Text>
             </TouchableOpacity>
         </Container>
