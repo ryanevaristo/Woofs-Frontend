@@ -1,13 +1,10 @@
 import { TouchableOpacity } from 'react-native'
+import { ContainerPage } from '../../components/ContainerPage'
 import { Text } from '../../components/Text'
-
-import { 
-    Container,
-} from './styles'
 
 export function Main({ navigation }) {
     return (
-        <Container>
+        <ContainerPage>
             <Text 
                 font={'xlarge'}
                 weight='bold'
@@ -18,6 +15,6 @@ export function Main({ navigation }) {
             <TouchableOpacity onPress={() => navigation.navigate('Login')}>
                 <Text font={'medium'}>Click</Text>
             </TouchableOpacity>
-        </Container>
+        </ContainerPage>
     )
 }

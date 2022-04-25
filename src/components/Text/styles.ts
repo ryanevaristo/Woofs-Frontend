@@ -9,7 +9,7 @@ type Props = {
 export const TextComponent = styled.Text<Props>`
     color: ${({ theme, color }) => color 
         ? theme.colors[color]
-        : theme.colors.white
+        : theme.colors.green100
     };
     font-family: ${({ theme, weight }) => weight 
         ? theme.fonts[weight]
